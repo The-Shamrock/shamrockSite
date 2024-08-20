@@ -1,15 +1,18 @@
+@import url('https://use.typekit.net/cbk4api.css');
+
 .header {
   @apply grid grid-cols-5 bg-[#74a76c] p-4;
+  font-family: 'Bungee';
 
   .logo {
-    @apply col-span-2;
+    @apply col-span-2 flex flex-row items-center text-2xl;
 
     h2 {
       @apply items-center;
     }
 
     img {
-      @apply float-left size-24;
+      @apply float-left size-24 pr-4 aspect-auto;
     }
   }
   .navbar {
