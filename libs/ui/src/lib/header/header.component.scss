@@ -1,14 +1,18 @@
 .header {
-  @apply grid grid-cols-5;
+  @apply grid grid-cols-5 bg-[#74a76c] p-4;
 
   .logo {
     @apply col-span-2;
 
+    h2 {
+      @apply items-center;
+    }
+
     img {
-      @apply float-left;
+      @apply float-left size-24;
     }
   }
   .navbar {
-    @apply col-span-3 flex flex-row justify-around;
+    @apply col-span-3 flex flex-row justify-around items-center;
   }
 }
