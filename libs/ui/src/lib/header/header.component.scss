@@ -1,0 +1,7 @@
+.header {
+  @apply flex flex-row w-max items-center justify-between;
+
+  .navbar {
+    @apply flex flex-row items-center justify-between;
+  }
+}
