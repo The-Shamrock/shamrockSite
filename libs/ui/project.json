@@ -21,6 +21,13 @@
           "tsConfig": "libs/ui/tsconfig.lib.json"
         }
       },
+      "assets": [
+        {
+          "glob": "**/*",
+          "input": "libs/shared-assets",
+          "output": "./assets"
+        }
+      ],
       "defaultConfiguration": "production"
     },
     "test": {

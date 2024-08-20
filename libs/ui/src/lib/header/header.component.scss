@@ -1,7 +1,14 @@
 .header {
-  @apply flex flex-row w-max items-center justify-between;
+  @apply grid grid-cols-5;
 
+  .logo {
+    @apply col-span-2;
+
+    img {
+      @apply float-left;
+    }
+  }
   .navbar {
-    @apply flex flex-row items-center justify-between;
+    @apply col-span-3 flex flex-row justify-around;
   }
 }
