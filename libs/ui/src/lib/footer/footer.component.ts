@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'lib-pages',
+  selector: 'lib-footer',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './pages.component.html',
-  styleUrl: './pages.component.css',
+  templateUrl: './footer.component.html',
+  styleUrl: './footer.component.css',
 })
-export class PagesComponent {}
+export class FooterComponent {}
