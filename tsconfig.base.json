@@ -15,8 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@angular-monorepo/pages": ["libs/pages/src/index.ts"],
-      "@angular-monorepo/ui": ["libs/ui/src/index.ts"]
+      "@shamrock/pages": ["libs/pages/src/index.ts"],
+      "@shamrock/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
