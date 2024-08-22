@@ -1,2 +1,2 @@
-export * from './lib/header/header.component';
-export * from './lib/footer/footer.component';
+export * from './lib/navigation/header/header.component';
+export * from './lib/navigation/footer/footer.component';
