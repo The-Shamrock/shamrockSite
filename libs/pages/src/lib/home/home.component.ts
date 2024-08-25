@@ -7,7 +7,7 @@ import { ImageCarouselComponent } from '@shamrock/ui';
   standalone: true,
   imports: [CommonModule, ImageCarouselComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
+  styleUrl: './home.component.scss',
 })
 export class HomeComponent {
   carouselImages = [
