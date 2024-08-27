@@ -1,32 +1,10 @@
 <ngb-carousel>
+  @for (image of data; track $index) {
   <ng-template ngbSlide>
-    <img
-      src="https://picsum.photos/1200/500?random&t=1"
-      alt="Random first slide"
-    />
+    <img (src)="(data[$index].image)" (alt)="(data[$index].altText)" />
     <div class="carousel-caption">
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </div>
-  </ng-template>
-  <ng-template ngbSlide>
-    <img
-      src="https://picsum.photos/1200/500?random&t=1"
-      alt="Random first slide"
-    />
-    <div class="carousel-caption">
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </div>
-  </ng-template>
-  <ng-template ngbSlide>
-    <img
-      src="https://picsum.photos/1200/500?random&t=1"
-      alt="Random first slide"
-    />
-    <div class="carousel-caption">
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </div>
-  </ng-template>
+      <h3>{{ data[$index].heading }}</h3>
+      <p>{{ data[$index].description }}</p>
+    </div> </ng-template
+  >}
 </ngb-carousel>

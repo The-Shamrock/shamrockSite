@@ -1,7 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
+export interface imageData {
+  image: string;
+  altText: string;
+  heading: string;
+  description: string;
+}
 @Component({
   selector: 'lib-image-carousel',
   standalone: true,
@@ -9,4 +15,6 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
   templateUrl: './image-carousel.component.html',
   styleUrl: './image-carousel.component.css',
 })
-export class ImageCarouselComponent {}
+export class ImageCarouselComponent {
+  @Input() data: imageData[] = [];
+}

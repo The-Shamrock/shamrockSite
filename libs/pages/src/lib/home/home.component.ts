@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ImageCarouselComponent } from '@shamrock/ui';
+import { imageData } from '@shamrock/ui';
 
 @Component({
   selector: 'lib-home',
@@ -10,9 +11,24 @@ import { ImageCarouselComponent } from '@shamrock/ui';
   styleUrl: './home.component.scss',
 })
 export class HomeComponent {
-  carouselImages = [
-    'https://via.placeholder.com/800x400?text=Image+1',
-    'https://via.placeholder.com/800x400?text=Image+2',
-    'https://via.placeholder.com/800x400?text=Image+3',
+  carouselData: imageData[] = [
+    {
+      image: 'https://via.placeholder.com/800x400',
+      altText: 'image',
+      heading: 'Heading 1',
+      description: 'Description 1',
+    },
+    {
+      image: 'https://via.placeholder.com/800x400',
+      altText: 'image',
+      heading: 'Heading 2',
+      description: 'Description 2',
+    },
+    {
+      image: 'https://via.placeholder.com/800x400',
+      altText: 'image',
+      heading: 'Heading 3',
+      description: 'Description 3',
+    },
   ];
 }
