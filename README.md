@@ -1,82 +1,158 @@
-# AngularMonorepo
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<!-- markdownlint-disable MD033 -->
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+<a id="readme-top"></a>
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Don't forget to give the project a star!
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/getting-started/tutorials/angular-monorepo-tutorial?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
 
-## Finish your CI setup
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
 
-[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/YMFEfgKp2D)
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/The-Shamrock/shamrockSite">
+    <img src="https://i.imgur.com/GDFU5cb.png" alt="Logo" width="80" height="80">
+  </a>
 
+  <h3 align="center">The Shamrock Website</h3>
 
-## Run tasks
+  <p align="center">
+    A web companion to The Shamrock's digital issues
+    <a href="https://github.com/The-Shamrock/shamrockSite/issues/new?assignees=&labels=bug&projects=&template=bug-report-%F0%9F%90%9E.md&title=Bug%3A+.....">Report Bug</a>
+    ·
+    <a href="https://github.com/The-Shamrock/shamrockSite/issues/new?assignees=&labels=enhancement&projects=&template=feature_request.md&title=Feat%3A+.....">Request Feature</a>
+  </p>
+</div>
 
-To run the dev server for your app, use:
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#environment-setup">Environment Setup</a></li>
+        <li><a href="#development-setup">Development Setup</a></li>
+      </ul>
+    </li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+  </ol>
+</details>
 
-```sh
-npx nx serve shamrock-site
-```
+<!-- ABOUT THE PROJECT -->
 
-To create a production bundle:
+## About The Project
 
-```sh
-npx nx build shamrock-site
-```
+[![Shamrock Screen Shot][product-screenshot]](https://example.com)
 
-To see all available targets to run for a project, run:
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-```sh
-npx nx show project shamrock-site
-```
-        
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
+### Built With
 
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+- [![Angular][Angular.io]][Angular-url]
+- [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 
-## Add new projects
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-While you could add new projects to your workspace manually, you might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
+<!-- GETTING STARTED -->
 
-Use the plugin's generator to create new projects.
+## Getting Started
 
-To generate a new application, use:
+### Environment Setup
 
-```sh
-npx nx g @nx/angular:app demo
-```
+If you've already setup your machine with Visual Studio, NVM, Yarn, etc., double check your versions and you can skip this section. If this is your first time setting up your dev machine, buckle in.
 
-To generate a new library, use:
+1. Install Visual Studio Code
+   - Download & follow the installation instructions [here](https://code.visualstudio.com/download).
+   - Once it is installed, be sure to install the [NX Console extension](https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console)
+2. Install NVM
+   - For Windows, go [here](https://github.com/coreybutler/nvm-windows#readme) and click the "Download Now!" button.
+   - For Mac/Linux, go [here](https://github.com/nvm-sh/nvm?tab=readme-ov-file), read the docs, and install using the script.
+3. Install Node
+   - From your terminal (while running as an Admin), run `nvm install 20.11.1`
+   - Then run `nvm use 20.11.1`
+4. Install Yarn
+   - Continuing in the terminal, run `npm install -g yarn`
+   - Note: If you need to update your `PATH` variable, [here's a simple gist](https://gist.github.com/yetanotherchris/1e339bd72d4698f70e2c3a02b04fc1c8).
+5. Install Angular
+   - Continuing in the terminal, run `yarn add global @angular/cli@18.2.0`
 
-```sh
-npx nx g @nx/angular:lib mylib
-```
+### Development Setup
 
-You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
+Now that your machine is setup and environment is ready, let's get the codebase rolling.
 
-[Learn more about Nx plugins &raquo;](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) | [Browse the plugin registry &raquo;](https://nx.dev/plugin-registry?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+1. Clone the Repo
+   - From the [repo itself](https://github.com/The-Shamrock/shamrockSite), you can click the "Code" button, and clone from there in whichever way you'd like.
+2. Setup the Site
+   - Open the repo in VS Code
+   - From the terminal, run `yarn`. This will install all packages needed.
+3. Run the Site
+   - Now that the packages are restored, it's time to run.
+   - Open the NX Console extension, under Projects -> shamrock-site -> serve
+   - Click serve, this will start building the website. It can take up to a minute depending on your system.
+   - Once this is done, the site can be accessed at `localhost:4200`
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+<!-- ROADMAP -->
 
-## Install Nx Console
+## Roadmap
 
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
+- [ ] Finish making the home page
+- [ ] Add Issues page
 
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+See the [open issues](https://github.com/The-Shamrock/shamrockSite/issues?q=is%3Aopen+is%3Aissue) for a full list of proposed features (and known issues).
 
-## Useful links
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Learn more:
+<!-- CONTRIBUTING -->
 
-- [Learn more about this workspace setup](https://nx.dev/getting-started/tutorials/angular-monorepo-tutorial?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+## Contributing
 
-And join the Nx community:
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+1. Create your Branch (`git checkout -b feat/AmazingFeature`)
+2. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+3. Push to the Branch (`git push origin feature/AmazingFeature`)
+4. Open a Pull Request
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGMENTS -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[product-screenshot]: https://i.imgur.com/fNnx6l1.png
+[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
+[Angular-url]: https://angular.io/
+[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[Bootstrap-url]: https://getbootstrap.com
