@@ -35,7 +35,7 @@
   <h3 align="center">The Shamrock Website</h3>
 
   <p align="center">
-    A web companion to The Shamrock's digital issues
+    A web companion to The Shamrock's digital issues \
     <a href="https://github.com/The-Shamrock/shamrockSite/issues/new?assignees=&labels=bug&projects=&template=bug-report-%F0%9F%90%9E.md&title=Bug%3A+.....">Report Bug</a>
     ·
     <a href="https://github.com/The-Shamrock/shamrockSite/issues/new?assignees=&labels=enhancement&projects=&template=feature_request.md&title=Feat%3A+.....">Request Feature</a>
