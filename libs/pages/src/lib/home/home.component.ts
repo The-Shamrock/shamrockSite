@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ImageCarouselComponent } from '@shamrock/ui';
 import { imageData } from '@shamrock/ui';
+import { AboutSectionComponent } from '@shamrock/ui';
 
 @Component({
   selector: 'lib-home',
   standalone: true,
-  imports: [CommonModule, ImageCarouselComponent],
+  imports: [CommonModule, ImageCarouselComponent, AboutSectionComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
