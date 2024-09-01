@@ -4,8 +4,8 @@
   "peerDependencies": {
     "@angular/common": "^18.2.0",
     "@angular/core": "^18.2.0",
-    "@nx/angular": "^18.2.0",
-    "@shamrock/ui": "^19.6.1"
+    "@nx/angular": "^19.6.1",
+    "@shamrock/ui": "^0.0.1"
   },
   "sideEffects": false
 }
