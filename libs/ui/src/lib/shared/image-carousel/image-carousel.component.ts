@@ -13,7 +13,7 @@ export interface imageData {
   standalone: true,
   imports: [CommonModule, NgbCarouselModule],
   templateUrl: './image-carousel.component.html',
-  styleUrl: './image-carousel.component.css',
+  styleUrl: './image-carousel.component.scss',
 })
 export class ImageCarouselComponent {
   @Input() data: imageData[] = [];
