@@ -3,11 +3,17 @@ import { CommonModule } from '@angular/common';
 import { ImageCarouselComponent } from '@shamrock/ui';
 import { imageData } from '@shamrock/ui';
 import { AboutSectionComponent } from '@shamrock/ui';
+import { MeetTeamComponent } from '@shamrock/ui';
 
 @Component({
   selector: 'lib-home',
   standalone: true,
-  imports: [CommonModule, ImageCarouselComponent, AboutSectionComponent],
+  imports: [
+    CommonModule,
+    ImageCarouselComponent,
+    AboutSectionComponent,
+    MeetTeamComponent,
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
