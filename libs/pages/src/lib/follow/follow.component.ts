@@ -6,6 +6,6 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './follow.component.html',
-  styleUrl: './follow.component.css',
+  styleUrl: './follow.component.scss',
 })
 export class FollowComponent {}
