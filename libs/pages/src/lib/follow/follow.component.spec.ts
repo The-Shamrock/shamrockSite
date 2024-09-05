@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ImageCarouselComponent } from './image-carousel.component';
+import { FollowComponent } from './follow.component';
 
-describe('ImageCarouselComponent', () => {
-  let component: ImageCarouselComponent;
-  let fixture: ComponentFixture<ImageCarouselComponent>;
+describe('FollowComponent', () => {
+  let component: FollowComponent;
+  let fixture: ComponentFixture<FollowComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ImageCarouselComponent],
+      imports: [FollowComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ImageCarouselComponent);
+    fixture = TestBed.createComponent(FollowComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
