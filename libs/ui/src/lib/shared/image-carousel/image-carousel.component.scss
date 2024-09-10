@@ -1,3 +1,7 @@
 img {
   @apply mx-auto;
 }
+
+div.carousel-caption {
+  backdrop-filter: blur(10px);
+}

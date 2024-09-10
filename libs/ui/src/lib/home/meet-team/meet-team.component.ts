@@ -17,31 +17,31 @@ export class MeetTeamComponent {
     {
       name: 'Sam Hirner',
       position: 'President',
-      image: './assets/samProfile.jpeg',
+      image: './assets/home/samProfile.jpeg',
       reverse: false,
     },
     {
       name: 'Joan Ferguson',
       position: 'Vice President',
-      image: './assets/joanPhoto.png',
+      image: './assets/home/joanPhoto.png',
       reverse: true,
     },
     {
       name: 'Parker Cohen',
       position: 'Treasurer',
-      image: './assets/parkerPhoto.png',
+      image: './assets/home/parkerPhoto.png',
       reverse: false,
     },
     {
       name: 'Lily Hlavac',
       position: 'Secretary',
-      image: './assets/lilyPhoto.jpeg',
+      image: './assets/home/lilyPhoto.jpeg',
       reverse: true,
     },
     {
       name: 'Cole Jones',
       position: 'Outreach Coordinator',
-      image: './assets/colePhoto.png',
+      image: './assets/home/colePhoto.png',
       reverse: false,
     },
   ];

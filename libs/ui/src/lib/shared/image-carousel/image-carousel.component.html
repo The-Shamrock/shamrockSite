@@ -2,7 +2,10 @@
   @for (image of data; track $index) {
   <ng-template ngbSlide>
     <img [src]="data[$index].image" [alt]="data[$index].altText" />
-    <div class="carousel-caption">
+    <div
+      class="carousel-caption"
+      [ngStyle]="{ color: data[$index].darkText ? '#000000' : '#FFFFFF' }"
+    >
       <h3>{{ data[$index].heading }}</h3>
       <p>{{ data[$index].description }}</p>
     </div> </ng-template
