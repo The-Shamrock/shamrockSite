@@ -4,7 +4,7 @@
     <img [src]="data[$index].image" [alt]="data[$index].altText" />
     <div
       class="carousel-caption"
-      [ngStyle]="{ color: data[$index].darkText ? '#000000' : '#FFFFFF' }"
+      [ngStyle]="{ color: data[$index].darkText ? '#FFFFFF' : '#000000' }"
     >
       <h3>{{ data[$index].heading }}</h3>
       <p>{{ data[$index].description }}</p>
