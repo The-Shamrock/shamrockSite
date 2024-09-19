@@ -7,27 +7,53 @@
   .logo {
     @apply col-span-2 flex flex-row items-center text-2xl;
 
-    h2 {
-      @apply items-center;
-    }
+    a {
+      
+      @apply flex flex-row items-center;
 
-    img {
-      @apply float-left size-24 pr-4 aspect-auto;
+      h1 {
+        @apply items-center pl-6 text-2xl;
+        font-weight: 400;
+        transition: font-size 0.5s;
+
+      }
+
+      img {
+        @apply float-left size-24 aspect-auto;
+      }
+    }
+  }
+
+  .logo:hover {
+    a h1 {
+      @apply text-3xl;
     }
   }
   .navbar {
     @apply col-span-3 flex flex-row justify-around items-center;
+
+    h2{
+      font-weight: 400;
+      @apply text-2xl;
+
+      transition: font-size 0.5s;
+    }
+
+    h2:hover {
+      @apply text-3xl;
+
+    }
   }
 
   a.nostyle:link {
     text-decoration: inherit;
     color: inherit;
-    cursor: auto;
+    // cursor: auto;
   }
 
   a.nostyle:visited {
     text-decoration: inherit;
     color: inherit;
-    cursor: auto;
+    // cursor: auto;
   }
 }
