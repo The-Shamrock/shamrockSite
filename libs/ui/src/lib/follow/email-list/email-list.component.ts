@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'lib-follow-us',
+  selector: 'lib-email-list',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './follow-us.component.html',
-  styleUrl: './follow-us.component.scss',
+  templateUrl: './email-list.component.html',
+  styleUrl: './email-list.component.scss',
 })
-export class FollowUsComponent {}
+export class EmailListComponent {}
