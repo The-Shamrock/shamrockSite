@@ -1,1 +1,3 @@
-<p>follow-us works!</p>
+@for(icon of this.iconData; track $index) {
+    <lib-follow-icon [data]="icon"></lib-follow-icon>
+}
