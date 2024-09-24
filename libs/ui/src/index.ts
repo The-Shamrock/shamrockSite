@@ -4,3 +4,6 @@ export * from './lib/shared/image-carousel/image-carousel.component';
 export * from './lib/home/about-section/about-section.component';
 export * from './lib/home/meet-team/meet-team.component';
 export * from './lib/home/meet-team-person/meet-team-person.component';
+export * from './lib/read/issue-reader/issue-reader.component';
+export * from './lib/read/issue-sidebar/issue-sidebar.component';
+export * from './lib/read/issues-sidebar/issues-sidebar.component';
