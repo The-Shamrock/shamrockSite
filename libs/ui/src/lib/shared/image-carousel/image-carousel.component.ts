@@ -7,6 +7,7 @@ export interface imageData {
   altText: string;
   heading: string;
   description: string;
+  darkText?: boolean;
 }
 @Component({
   selector: 'lib-image-carousel',
