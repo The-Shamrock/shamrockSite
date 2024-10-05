@@ -1,13 +1,16 @@
-<div class="meet-person">
-  <div class="meet-img">
-    <img
-      src="https://picsum.photos/1200/500?random&t=1"
-      alt="About the Shamrock"
-    />
+<div class="meet-person row">
+  @if(person.reverse) {
+  <div class="meet-img col-4">
+    <img src="{{ person.image }}" alt="Photo of {{ person.name }}" />
   </div>
-  <div class="meet-text">
-    <p>Name</p>
-    <p>Role</p>
-    <p>m</p>
+  }
+  <div class="meet-text col-8">
+    <p>{{ this.person.name }}</p>
+    <p>{{ this.person.position }}</p>
   </div>
+  @if(!person.reverse) {
+  <div class="meet-img col-4">
+    <img src="{{ person.image }}" alt="Photo of {{ person.name }}" />
+  </div>
+  }
 </div>

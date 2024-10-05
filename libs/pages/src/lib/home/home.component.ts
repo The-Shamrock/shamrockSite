@@ -20,22 +20,28 @@ import { MeetTeamComponent } from '@shamrock/ui';
 export class HomeComponent {
   carouselData: imageData[] = [
     {
-      image: 'https://via.placeholder.com/800x400',
-      altText: 'image',
-      heading: 'Heading 1',
-      description: 'Description 1',
+      image: './assets/home/skateboardArticleHeader.png',
+      altText:
+        'Engineering of Skateboarding article, with header, body text, and image',
+      heading: 'Learn About the Engineering of Skateboarding',
+      description: 'Article available in the May 2024 issue!',
+      darkText: false,
     },
     {
-      image: 'https://via.placeholder.com/800x400',
-      altText: 'image',
-      heading: 'Heading 2',
-      description: 'Description 2',
+      image: './assets/home/shamrockMay2024Cover.png',
+      altText:
+        'Shamrock May 2024 Cover, featuring a person skateboarding towards the viewer',
+      heading: 'May 2024 Issue Out Now!',
+      description: 'Read it over on the Issues tab',
+      darkText: true,
     },
     {
-      image: 'https://via.placeholder.com/800x400',
-      altText: 'image',
-      heading: 'Heading 3',
-      description: 'Description 3',
+      image: './assets/home/trailReviewArticle.png',
+      altText: 'Heading of trail review article',
+      heading: 'Columbia Trail Reviews',
+      description:
+        'Learn about 6 great trails across Columbia, in the May 2024 issue!',
+      darkText: false,
     },
   ];
 }
