@@ -1,5 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+export interface Issue {
+  title: string;
+  imageUrl: string;
+}
 
 @Component({
   selector: 'lib-issue-sidebar',
@@ -8,4 +13,9 @@ import { CommonModule } from '@angular/common';
   templateUrl: './issue-sidebar.component.html',
   styleUrl: './issue-sidebar.component.scss',
 })
-export class IssueSidebarComponent {}
+export class IssueSidebarComponent {
+  @Input() data: Issue = {
+    title: "",
+    imageUrl: ""
+  };
+}
