@@ -13,16 +13,16 @@ import { IssueSidebarComponent } from '../issue-sidebar/issue-sidebar.component'
 export class IssuesSidebarComponent {
   issues = [
     {
-      title: 'Issue 1',
-      imageUrl: 'https://via.placeholder.com/150'
+      title: 'October 2024',
+      imageUrl: './assets/covers/oct2024.png'
     },
     {
-      title: 'Issue 2',
-      imageUrl: 'https://via.placeholder.com/150'
+      title: 'May 2024',
+      imageUrl: './assets/covers/may2024.png'
     },
     {
-      title: 'Issue 3',
-      imageUrl: 'https://via.placeholder.com/150'
+      title: 'March 2024',
+      imageUrl: './assets/covers/mar2024.png'
     }
   ];
 }
