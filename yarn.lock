@@ -2520,6 +2520,28 @@
   dependencies:
     tslib "^2.3.0"
 
+"@ngrx/eslint-plugin@^18.1.0":
+  version "18.1.0"
+  resolved "https://registry.yarnpkg.com/@ngrx/eslint-plugin/-/eslint-plugin-18.1.0.tgz#4ed544ed064b6ff82a32a3d76937a5b13e4a9a55"
+  integrity sha512-IR8ngksDhjlB+KR5MsVZrihUGe0Qle4xNW6FUE7oVuqmUDdtZjnu8mCy4nnlU7HWQDgrdF+9D/+Y4j8jxLnf5A==
+  dependencies:
+    semver "^7.3.5"
+    strip-json-comments "3.1.1"
+
+"@ngrx/signals@^18.1.0":
+  version "18.1.0"
+  resolved "https://registry.yarnpkg.com/@ngrx/signals/-/signals-18.1.0.tgz#017f0c9656899c461709fc72bd57a5659e60a0b7"
+  integrity sha512-ivuOyCPXoysUxvCRotRAMtwo+ObfWN06kHz/Nnlp8GyCB6wgZaUUGe6luOQyWhrZkbu3K+oCu7HB6YCSY6zT+A==
+  dependencies:
+    tslib "^2.3.0"
+
+"@ngrx/store@^18.1.0":
+  version "18.1.0"
+  resolved "https://registry.yarnpkg.com/@ngrx/store/-/store-18.1.0.tgz#5cdbe3c47b84a3ebae85b5e0c55acc41619e8c56"
+  integrity sha512-ijxAzJMOb3LeiegpJNNaL8BkcxNg2DVgd/NTiGCJNI7vVUEvtlSRPSWDDYY3Z9Q5oVyqJG9CP0IN/o5FGAGyAw==
+  dependencies:
+    tslib "^2.0.0"
+
 "@ngtools/webpack@18.2.2":
   version "18.2.2"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-18.2.2.tgz#acc8f2438fd7af2651e3266f4c43fb81649563cc"
@@ -10361,7 +10383,7 @@ strip-final-newline@^2.0.0:
   resolved "https://registry.yarnpkg.com/strip-final-newline/-/strip-final-newline-2.0.0.tgz#89b852fb2fcbe936f6f4b3187afb0a12c1ab58ad"
   integrity sha512-BrpvfNAE3dcvq7ll3xVumzjKjZQ5tI1sEUIKr3Uoks0XUl45St3FlatVqef9prk4jRDzhW6WZg+3bk93y6pLjA==
 
-strip-json-comments@^3.1.1:
+strip-json-comments@3.1.1, strip-json-comments@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-3.1.1.tgz#31f1281b3832630434831c310c01cccda8cbe006"
   integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==

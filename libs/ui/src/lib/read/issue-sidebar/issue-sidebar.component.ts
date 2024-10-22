@@ -1,9 +1,11 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReadStore } from '../store/read.store';
 
 export interface Issue {
   title: string;
   imageUrl: string;
+  id: string;
 }
 
 @Component({
@@ -16,6 +18,13 @@ export interface Issue {
 export class IssueSidebarComponent {
   @Input() data: Issue = {
     title: "",
-    imageUrl: ""
+    imageUrl: "",
+    id: ""
   };
+
+  private store = inject(ReadStore);
+
+  issueClicked() {
+    this.store.setIssue(this.data.id);
+  }
 }

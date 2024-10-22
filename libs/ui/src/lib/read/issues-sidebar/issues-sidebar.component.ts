@@ -14,15 +14,18 @@ export class IssuesSidebarComponent {
   issues = [
     {
       title: 'October 2024',
-      imageUrl: './assets/covers/oct2024.png'
+      imageUrl: './assets/covers/oct2024.png',
+      id: 'oct2024'
     },
     {
       title: 'May 2024',
-      imageUrl: './assets/covers/may2024.png'
+      imageUrl: './assets/covers/may2024.png',
+      id: 'may2024'
     },
     {
       title: 'March 2024',
-      imageUrl: './assets/covers/mar2024.png'
+      imageUrl: './assets/covers/mar2024.png',
+      id: 'mar2024'
     }
   ];
 }

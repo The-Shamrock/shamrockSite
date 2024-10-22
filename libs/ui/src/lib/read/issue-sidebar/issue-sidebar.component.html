@@ -1,4 +1,6 @@
 <div class="issue">
-    <img [src]="data.imageUrl">
-    <p class="title">{{data.title}}</p>
+    <a (click)="issueClicked()">
+        <img [src]="data.imageUrl">
+        <p class="title">{{data.title}}</p>
+    </a>
 </div>

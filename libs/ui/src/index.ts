@@ -7,3 +7,4 @@ export * from './lib/home/meet-team-person/meet-team-person.component';
 export * from './lib/read/issue-reader/issue-reader.component';
 export * from './lib/read/issue-sidebar/issue-sidebar.component';
 export * from './lib/read/issues-sidebar/issues-sidebar.component';
+export * from './lib/read/store/read.store';
