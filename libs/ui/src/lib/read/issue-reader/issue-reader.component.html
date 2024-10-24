@@ -1,8 +1,8 @@
 <div>
-    @if (this.selectedIssue) {
-        <object class="pdf" data={{this.selectedIssue}} width="100%">
+    @if (this.store.selectedIssue(); as issue) {
+        <object class="pdf" [data]="getSanitizedUrl(issue)" width="100%">
         </object>
-    } @else {    
+    } @else {
         <object class="pdf" data='./assets/issues/oct2024.pdf' width="100%">
     </object>
     }
