@@ -5,7 +5,7 @@ type ReadState = {
 };
 
 const initialState: ReadState = {
-  selectedIssue: "latest"
+  selectedIssue: './assets/issues/oct2024.pdf'
 };
 
 export const ReadStore = signalStore(

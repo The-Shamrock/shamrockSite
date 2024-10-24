@@ -1,6 +1,9 @@
 <div>
-    <object class="pdf"
-    (data)=
-    "this.issueFile" width="100%">
+    @if (this.selectedIssue) {
+        <object class="pdf" data={{this.selectedIssue}} width="100%">
+        </object>
+    } @else {    
+        <object class="pdf" data='./assets/issues/oct2024.pdf' width="100%">
     </object>
+    }
 </div>

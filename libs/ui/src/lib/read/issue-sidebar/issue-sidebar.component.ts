@@ -5,7 +5,7 @@ import { ReadStore } from '../store/read.store';
 export interface Issue {
   title: string;
   imageUrl: string;
-  id: string;
+  file: string;
 }
 
 @Component({
@@ -19,12 +19,13 @@ export class IssueSidebarComponent {
   @Input() data: Issue = {
     title: "",
     imageUrl: "",
-    id: ""
+    file: ""
   };
 
   private store = inject(ReadStore);
 
   issueClicked() {
-    this.store.setIssue(this.data.id);
+    console.log("clicked " + this.data.file);
+    this.store.setIssue(this.data.file);
   }
 }

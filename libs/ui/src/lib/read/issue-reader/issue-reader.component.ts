@@ -11,26 +11,11 @@ import { ReadStore } from '../store/read.store';
 })
 export class IssueReaderComponent {
   private store = inject(ReadStore);
-  selectedIssue = '';
-  issueFile = '';
+  selectedIssue = './assets/issues/oct2024.pdf';
 
   constructor() {
     this.selectedIssue = this.store.selectedIssue();
-
-    switch(this.selectedIssue) {
-      case 'latest':
-        this.issueFile = './assets/issues/oct2024.pdf';
-        break;
-      case 'oct2024':
-        this.issueFile = './assets/issues/oct2024.pdf';
-        break;
-      case 'may2024':
-        this.issueFile = './assets/issues/may2024.pdf';
-        break;
-      case 'mar2024':
-        this.issueFile = './assets/issues/mar2024.pdf';
-        break;
-    }
+    console.log("Reader has issue " + this.selectedIssue);
   }
 
 }
