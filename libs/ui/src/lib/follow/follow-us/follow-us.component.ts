@@ -12,22 +12,22 @@ import { followIcon, FollowIconComponent } from '../follow-icon/follow-icon.comp
 export class FollowUsComponent {
   iconData: followIcon[] = [
     {
-      imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png",
+      imageUrl: "./assets/follow/instagramIcon.png",
       altText: "Instragram",
       name: "Instagram",
       linkUrl: "https://www.instagram.com/the_shamrock_mu/"
     },
     {
-      imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png",
-      altText: "Instragram",
-      name: "Instagram",
-      linkUrl: "https://www.instagram.com/the_shamrock_mu/"
+      imageUrl: "./assets/follow/tiktokIcon.png",
+      altText: "TikTok",
+      name: "TikTok",
+      linkUrl: "https://www.tiktok.com/@the_shamrock_mu"
     },
     {
-      imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png",
-      altText: "Instragram",
-      name: "Instagram",
-      linkUrl: "https://www.instagram.com/the_shamrock_mu/"
+      imageUrl: "./assets/follow/youtubeIcon.png",
+      altText: "YouTube",
+      name: "YouTube",
+      linkUrl: "https://www.youtube.com/channel/UCGM5BR3Wm76lf4pvfWX7CFw"
     }
   ]
 }
