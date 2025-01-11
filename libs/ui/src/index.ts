@@ -8,3 +8,7 @@ export * from './lib/read/issue-reader/issue-reader.component';
 export * from './lib/read/issue-sidebar/issue-sidebar.component';
 export * from './lib/read/issues-sidebar/issues-sidebar.component';
 export * from './lib/read/store/read.store';
+export * from './lib/follow/follow-us/follow-us.component';
+export * from './lib/follow/follow-icon/follow-icon.component';
+export * from './lib/follow/email-list/email-list.component';
+export * from './lib/follow/join-us/join-us.component';
