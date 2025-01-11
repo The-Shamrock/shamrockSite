@@ -6,6 +6,6 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './puzzle-display.component.html',
-  styleUrl: './puzzle-display.component.css',
+  styleUrl: './puzzle-display.component.scss',
 })
 export class PuzzleDisplayComponent {}

@@ -6,6 +6,6 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './puzzle-sidebar.component.html',
-  styleUrl: './puzzle-sidebar.component.css',
+  styleUrl: './puzzle-sidebar.component.scss',
 })
 export class PuzzleSidebarComponent {}
