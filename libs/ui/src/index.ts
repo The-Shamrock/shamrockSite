@@ -4,3 +4,7 @@ export * from './lib/shared/image-carousel/image-carousel.component';
 export * from './lib/home/about-section/about-section.component';
 export * from './lib/home/meet-team/meet-team.component';
 export * from './lib/home/meet-team-person/meet-team-person.component';
+export * from './lib/follow/follow-us/follow-us.component';
+export * from './lib/follow/follow-icon/follow-icon.component';
+export * from './lib/follow/email-list/email-list.component';
+export * from './lib/follow/join-us/join-us.component';
