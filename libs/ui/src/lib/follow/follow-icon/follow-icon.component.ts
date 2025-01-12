@@ -9,11 +9,10 @@ export interface followIcon {
 }
 
 @Component({
-  selector: 'lib-follow-icon',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './follow-icon.component.html',
-  styleUrl: './follow-icon.component.scss',
+    selector: 'lib-follow-icon',
+    imports: [CommonModule],
+    templateUrl: './follow-icon.component.html',
+    styleUrl: './follow-icon.component.scss'
 })
 export class FollowIconComponent {
   @Input() data: followIcon = {imageUrl: "", altText: "", name: "", linkUrl: ""};

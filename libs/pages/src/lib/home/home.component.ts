@@ -6,16 +6,15 @@ import { AboutSectionComponent } from '@shamrock/ui';
 import { MeetTeamComponent } from '@shamrock/ui';
 
 @Component({
-  selector: 'lib-home',
-  standalone: true,
-  imports: [
-    CommonModule,
-    ImageCarouselComponent,
-    AboutSectionComponent,
-    MeetTeamComponent,
-  ],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss',
+    selector: 'lib-home',
+    imports: [
+        CommonModule,
+        ImageCarouselComponent,
+        AboutSectionComponent,
+        MeetTeamComponent,
+    ],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.scss'
 })
 export class HomeComponent {
   carouselData: imageData[] = [

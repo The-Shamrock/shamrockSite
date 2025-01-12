@@ -9,11 +9,10 @@ export interface meetPerson {
 }
 
 @Component({
-  selector: 'lib-meet-team-person',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './meet-team-person.component.html',
-  styleUrl: './meet-team-person.component.scss',
+    selector: 'lib-meet-team-person',
+    imports: [CommonModule],
+    templateUrl: './meet-team-person.component.html',
+    styleUrl: './meet-team-person.component.scss'
 })
 export class MeetTeamPersonComponent {
   @Input() person: meetPerson = {
