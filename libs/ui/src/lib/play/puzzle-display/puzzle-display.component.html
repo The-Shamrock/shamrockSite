@@ -1,1 +1,11 @@
-<p>puzzle-display works!</p>
+@switch (this.selectedPuzzle) {
+  @case ("crossword-dec-2024") {
+    <iframe style="height: 90vh; width: 100%;" src="https://crosshare.org/embed/73k1NPpQTUFkfb2Nxn9f/gUtiLevCJVO0dZqDb7AcvvqSKrw2" frameborder="0" allowfullscreen="true" allowtransparency="true" allow="clipboard-write *"></iframe>
+  }
+  @case ("crossword-oct-2024") {
+    <iframe style="height: 90vh; width: 100%;" src="https://crosshare.org/embed/2cP7nHAHGk4eD3vdlXgE/gUtiLevCJVO0dZqDb7AcvvqSKrw2" frameborder="0" allowfullscreen="true" allowtransparency="true" allow="clipboard-write *"></iframe>
+  }
+  @default {
+    Default case.
+  }
+}
