@@ -3,11 +3,10 @@ import { CommonModule } from '@angular/common';
 import { followIcon, FollowIconComponent } from '../follow-icon/follow-icon.component';
 
 @Component({
-  selector: 'lib-follow-us',
-  standalone: true,
-  imports: [CommonModule, FollowIconComponent],
-  templateUrl: './follow-us.component.html',
-  styleUrl: './follow-us.component.scss',
+    selector: 'lib-follow-us',
+    imports: [CommonModule, FollowIconComponent],
+    templateUrl: './follow-us.component.html',
+    styleUrl: './follow-us.component.scss'
 })
 export class FollowUsComponent {
   iconData: followIcon[] = [

@@ -9,11 +9,10 @@ export interface Issue {
 }
 
 @Component({
-  selector: 'lib-issue-sidebar',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './issue-sidebar.component.html',
-  styleUrl: './issue-sidebar.component.scss',
+    selector: 'lib-issue-sidebar',
+    imports: [CommonModule],
+    templateUrl: './issue-sidebar.component.html',
+    styleUrl: './issue-sidebar.component.scss'
 })
 export class IssueSidebarComponent {
   @Input() data: Issue = {

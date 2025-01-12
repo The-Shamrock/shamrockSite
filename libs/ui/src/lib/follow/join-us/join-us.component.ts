@@ -4,11 +4,10 @@ import { FollowIconComponent } from '../follow-icon/follow-icon.component';
 import { followIcon } from '../follow-icon/follow-icon.component';
 
 @Component({
-  selector: 'lib-join-us',
-  standalone: true,
-  imports: [CommonModule, FollowIconComponent],
-  templateUrl: './join-us.component.html',
-  styleUrl: './join-us.component.scss',
+    selector: 'lib-join-us',
+    imports: [CommonModule, FollowIconComponent],
+    templateUrl: './join-us.component.html',
+    styleUrl: './join-us.component.scss'
 })
 export class JoinUsComponent {
   iconData: followIcon[] = [
