@@ -3,11 +3,10 @@ import { RouterModule } from '@angular/router';
 import { HeaderComponent, FooterComponent } from '@shamrock/ui';
 
 @Component({
-  standalone: true,
-  imports: [RouterModule, HeaderComponent, FooterComponent],
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+    imports: [RouterModule, HeaderComponent, FooterComponent],
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'shamrock-site';

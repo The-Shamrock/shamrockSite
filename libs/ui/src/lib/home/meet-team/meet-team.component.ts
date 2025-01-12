@@ -6,11 +6,10 @@ import {
 } from '.././meet-team-person/meet-team-person.component';
 
 @Component({
-  selector: 'lib-meet-team',
-  standalone: true,
-  imports: [CommonModule, MeetTeamPersonComponent],
-  templateUrl: './meet-team.component.html',
-  styleUrl: './meet-team.component.scss',
+    selector: 'lib-meet-team',
+    imports: [CommonModule, MeetTeamPersonComponent],
+    templateUrl: './meet-team.component.html',
+    styleUrl: './meet-team.component.scss'
 })
 export class MeetTeamComponent {
   people: meetPerson[] = [

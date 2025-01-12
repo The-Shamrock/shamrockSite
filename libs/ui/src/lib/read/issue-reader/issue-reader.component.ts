@@ -4,11 +4,10 @@ import { ReadStore } from '../store/read.store';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
-  selector: 'lib-issue-reader',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './issue-reader.component.html',
-  styleUrl: './issue-reader.component.scss',
+    selector: 'lib-issue-reader',
+    imports: [CommonModule],
+    templateUrl: './issue-reader.component.html',
+    styleUrl: './issue-reader.component.scss'
 })
 export class IssueReaderComponent {
   store = inject(ReadStore);

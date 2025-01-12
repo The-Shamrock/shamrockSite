@@ -3,11 +3,10 @@ import { CommonModule } from '@angular/common';
 import { IssueSidebarComponent } from '../issue-sidebar/issue-sidebar.component';
 
 @Component({
-  selector: 'lib-issues-sidebar',
-  standalone: true,
-  imports: [CommonModule, IssueSidebarComponent],
-  templateUrl: './issues-sidebar.component.html',
-  styleUrl: './issues-sidebar.component.scss',
+    selector: 'lib-issues-sidebar',
+    imports: [CommonModule, IssueSidebarComponent],
+    templateUrl: './issues-sidebar.component.html',
+    styleUrl: './issues-sidebar.component.scss'
 })
 
 export class IssuesSidebarComponent {
