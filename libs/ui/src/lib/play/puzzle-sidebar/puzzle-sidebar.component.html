@@ -1,12 +1,16 @@
 <div ngbAccordion>
-  <div ngbAccordionItem>
-    <h2 ngbAccordionHeader>
-      <button ngbAccordionButton>First</button>
-    </h2>
-    <div ngbAccordionCollapse>
-      <div ngbAccordionBody>
-        <ng-template>Content for the first item</ng-template>
+  @for (issue of this.data; track $index) {
+    <div ngbAccordionItem>
+      <h2 ngbAccordionHeader>
+        <button ngbAccordionButton>{{issue.title}}</button>
+      </h2>
+      <div ngbAccordionCollapse>
+        <div ngbAccordionBody>
+          @for (puzzle of issue.puzzles; track $index) {
+            <p>{{puzzle}}</p>
+          }
+        </div>
       </div>
     </div>
-  </div>
+  }
 </div>
