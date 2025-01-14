@@ -7,7 +7,9 @@
       <div ngbAccordionCollapse>
         <div ngbAccordionBody>
           @for (puzzle of issue.puzzles; track $index) {
-            <button (click)="this.selectPuzzle(puzzle)">{{puzzle.title}}</button>
+            @if (puzzle) {
+              <button (click)="this.selectPuzzle(puzzle)">{{puzzle.title}}</button>
+            }
           }
         </div>
       </div>
