@@ -14,7 +14,7 @@ export class PuzzleDisplayComponent {
   store = inject(PlayStore);
   selectedPuzzle = 'crossword-dec-2024';
 
-    constructor() {
-      this.selectedPuzzle = this.store.selectedPuzzle();
-    }
+  constructor() {
+    this.selectedPuzzle = this.store.selectedPuzzle();
+  }
 }
