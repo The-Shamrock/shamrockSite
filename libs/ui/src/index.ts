@@ -14,3 +14,7 @@ export * from './lib/follow/email-list/email-list.component';
 export * from './lib/follow/join-us/join-us.component';
 export * from './lib/play/puzzle-sidebar/puzzle-sidebar.component';
 export * from './lib/play/puzzle-display/puzzle-display.component';
+export * from './lib/watch/video-player/video-player.component';
+export * from './lib/watch/video-cards/video-cards.component';
+export * from './lib/watch/video-card/video-card.component';
+export * from './lib/watch/video-info/video-info.component';
