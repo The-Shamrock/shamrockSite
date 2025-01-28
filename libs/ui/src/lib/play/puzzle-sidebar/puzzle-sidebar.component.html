@@ -1,0 +1,18 @@
+<div ngbAccordion>
+  @for (issue of this.data; track $index) {
+    <div ngbAccordionItem>
+      <h2 ngbAccordionHeader>
+        <button ngbAccordionButton>{{issue.title}}</button>
+      </h2>
+      <div ngbAccordionCollapse>
+        <div ngbAccordionBody class="flex flex-col">
+          @for (puzzle of issue.puzzles; track $index) {
+            @if (puzzle) {
+              <button (click)="this.selectPuzzle(puzzle)">{{puzzle.title}}</button>
+            }
+          }
+        </div>
+      </div>
+    </div>
+  }
+</div>

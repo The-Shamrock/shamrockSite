@@ -10,8 +10,7 @@
       "executor": "@nx/angular:ng-packagr-lite",
       "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
       "options": {
-        "project": "libs/pages/ng-package.json",
-        "tailwindConfig": "libs/pages/tailwind.config.js"
+        "project": "libs/pages/ng-package.json"
       },
       "configurations": {
         "production": {

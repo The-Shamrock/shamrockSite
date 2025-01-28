@@ -1,5 +1,5 @@
 <div class="meet">
-  <lib-meet-team-person></lib-meet-team-person>
-  <lib-meet-team-person></lib-meet-team-person>
-  <lib-meet-team-person></lib-meet-team-person>
+  @for (person of this.people; track $index) {
+  <lib-meet-team-person [person]="this.people[$index]"></lib-meet-team-person>
+  }
 </div>

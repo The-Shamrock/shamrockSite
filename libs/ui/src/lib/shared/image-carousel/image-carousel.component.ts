@@ -7,13 +7,13 @@ export interface imageData {
   altText: string;
   heading: string;
   description: string;
+  darkText?: boolean;
 }
 @Component({
-  selector: 'lib-image-carousel',
-  standalone: true,
-  imports: [CommonModule, NgbCarouselModule],
-  templateUrl: './image-carousel.component.html',
-  styleUrl: './image-carousel.component.scss',
+    selector: 'lib-image-carousel',
+    imports: [CommonModule, NgbCarouselModule],
+    templateUrl: './image-carousel.component.html',
+    styleUrl: './image-carousel.component.scss'
 })
 export class ImageCarouselComponent {
   @Input() data: imageData[] = [];
