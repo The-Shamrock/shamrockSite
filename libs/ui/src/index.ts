@@ -12,3 +12,5 @@ export * from './lib/follow/follow-us/follow-us.component';
 export * from './lib/follow/follow-icon/follow-icon.component';
 export * from './lib/follow/email-list/email-list.component';
 export * from './lib/follow/join-us/join-us.component';
+export * from './lib/play/puzzle-sidebar/puzzle-sidebar.component';
+export * from './lib/play/puzzle-display/puzzle-display.component';
