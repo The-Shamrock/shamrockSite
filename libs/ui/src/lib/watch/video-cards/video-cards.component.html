@@ -1,1 +1,5 @@
-<p>video-cards works!</p>
+<div class="grid md:grid-cols-4 lg:grid-cols-6 gap-2">
+    @for (videoCard of this.videoCards; track $index) {
+        <lib-video-card class="grid-"></lib-video-card>
+    }
+</div>
