@@ -1,4 +1,6 @@
-<div class="flex flex-col">
-    <img src="./assets/watch/thumbnails/greenBurger.png">
-    <span class="text-center">Green Burger</span>
-</div>
+<a (click)="videoClicked()">
+    <div class="flex flex-col">
+        <img [src]="data.img">
+        <span class="text-center">{{data.title}}</span>   
+    </div>
+</a>

@@ -1,6 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { VideoCard } from '../video-cards/video-cards.component';
+import { WatchStore } from '../store/watch.store';
 
 @Component({
   selector: 'lib-video-card',
@@ -9,5 +10,11 @@ import { VideoCard } from '../video-cards/video-cards.component';
   styleUrl: './video-card.component.scss',
 })
 export class VideoCardComponent {
-  @Input() data: VideoCard = {img: "", title: ""};
+  @Input() data: VideoCard = {img: "", title: "", url: ""};
+
+    private store = inject(WatchStore);
+  
+    videoClicked() {
+      this.store.setVideo(this.data.url);
+    }
 }

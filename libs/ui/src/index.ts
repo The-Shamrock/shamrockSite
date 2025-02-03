@@ -18,3 +18,4 @@ export * from './lib/watch/video-player/video-player.component';
 export * from './lib/watch/video-cards/video-cards.component';
 export * from './lib/watch/video-card/video-card.component';
 export * from './lib/watch/video-info/video-info.component';
+export * from './lib/watch/store/watch.store';
