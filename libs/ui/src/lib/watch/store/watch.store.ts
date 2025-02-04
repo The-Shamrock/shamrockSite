@@ -2,10 +2,12 @@ import { signalStore, withState, withMethods, patchState } from '@ngrx/signals';
 
 type WatchState = {
   selectedVideo: string;
+  platform: string;
 };
 
 const initialState: WatchState = {
-  selectedVideo: 'https://www.youtube.com/embed/OpbLrxw5ul0?si=GaMOvkKyxkRY1Xsl'
+  selectedVideo: 'https://www.youtube.com/embed/OpbLrxw5ul0?si=GaMOvkKyxkRY1Xsl',
+  platform: 'yt'
 };
 
 export const WatchStore = signalStore(
@@ -13,8 +15,8 @@ export const WatchStore = signalStore(
     withState(initialState),
     withMethods((store) => {
       return {
-        setVideo(url: string): void {
-            patchState(store, {selectedVideo: url});
+        setVideo(url: string, platform: string): void {
+            patchState(store, {selectedVideo: url, platform: platform});
         }
       };
     })

@@ -10,11 +10,11 @@ import { WatchStore } from '../store/watch.store';
   styleUrl: './video-card.component.scss',
 })
 export class VideoCardComponent {
-  @Input() data: VideoCard = {img: "", title: "", url: ""};
+  @Input() data: VideoCard = {img: "", title: "", url: "", platform: ""};
 
     private store = inject(WatchStore);
   
     videoClicked() {
-      this.store.setVideo(this.data.url);
+      this.store.setVideo(this.data.url, this.data.platform);
     }
 }
